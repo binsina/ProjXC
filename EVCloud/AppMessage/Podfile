@@ -1,0 +1,28 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'AppMessage' do
+    platform :ios, '8.0'
+    pod 'EVReflection'
+    pod 'SwiftLocation'
+    #pod 'Async', :git => 'https://github.com/duemunk/Async.git', :branch => 'feature/Swift_2.0'
+    pod 'AsyncSwift'
+    pod 'PermissionScope', :git => 'https://github.com/nickoneill/PermissionScope.git', :branch => 'cloudkit'
+
+    pod 'JSQMessagesViewController'
+    pod 'CRToast'
+    pod 'UIImage-Resize'
+    pod 'UzysAssetsPickerController'
+    pod 'VIPhotoView'
+    #pod 'SSASideMenu' --> for now included
+end
+
+target 'OSXTest' do
+    platform :osx, '10.10'
+    pod 'EVReflection'
+end
+
+target 'tvOSTest' do
+    platform :tvos, '9.0'
+    pod 'EVReflection'
+end
